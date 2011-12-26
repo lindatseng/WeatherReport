@@ -1,0 +1,322 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22CAB64414A473400094D922 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22CAB64314A473400094D922 /* UIKit.framework */; };
+		22CAB64614A473400094D922 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22CAB64514A473400094D922 /* Foundation.framework */; };
+		22CAB64814A473400094D922 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22CAB64714A473400094D922 /* CoreGraphics.framework */; };
+		22CAB64E14A473400094D922 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22CAB64C14A473400094D922 /* InfoPlist.strings */; };
+		22CAB65014A473400094D922 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CAB64F14A473400094D922 /* main.m */; };
+		22CAB65414A473400094D922 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CAB65314A473400094D922 /* AppDelegate.m */; };
+		22CAB65714A473400094D922 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CAB65614A473400094D922 /* ViewController.m */; };
+		22CAB65A14A473400094D922 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22CAB65814A473400094D922 /* ViewController.xib */; };
+		22DD527A14A80C4B003A9506 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DD527914A80C4B003A9506 /* AudioToolbox.framework */; };
+		22DD527C14A80C54003A9506 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DD527B14A80C54003A9506 /* CFNetwork.framework */; };
+		22DD527E14A80C6A003A9506 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DD527D14A80C6A003A9506 /* SystemConfiguration.framework */; };
+		22DD528014A80C73003A9506 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DD527F14A80C73003A9506 /* MobileCoreServices.framework */; };
+		22DD528214A80CE6003A9506 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DD528114A80CE6003A9506 /* libz.1.1.3.dylib */; };
+		22DD528414A80CF1003A9506 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DD528314A80CF1003A9506 /* Security.framework */; };
+		22DD528614A81C46003A9506 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DD528514A81C46003A9506 /* Parse.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		22CAB63F14A473400094D922 /* WeatherReport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherReport.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22CAB64314A473400094D922 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		22CAB64514A473400094D922 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		22CAB64714A473400094D922 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		22CAB64B14A473400094D922 /* WeatherReport-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WeatherReport-Info.plist"; sourceTree = "<group>"; };
+		22CAB64D14A473400094D922 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		22CAB64F14A473400094D922 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		22CAB65114A473400094D922 /* WeatherReport-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeatherReport-Prefix.pch"; sourceTree = "<group>"; };
+		22CAB65214A473400094D922 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		22CAB65314A473400094D922 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		22CAB65514A473400094D922 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		22CAB65614A473400094D922 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		22CAB65914A473400094D922 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		22DD527914A80C4B003A9506 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		22DD527B14A80C54003A9506 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		22DD527D14A80C6A003A9506 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		22DD527F14A80C73003A9506 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		22DD528114A80CE6003A9506 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		22DD528314A80CF1003A9506 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		22DD528514A81C46003A9506 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = WeatherReport/Parse.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22CAB63C14A473400094D922 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22DD528414A80CF1003A9506 /* Security.framework in Frameworks */,
+				22DD528214A80CE6003A9506 /* libz.1.1.3.dylib in Frameworks */,
+				22DD528014A80C73003A9506 /* MobileCoreServices.framework in Frameworks */,
+				22DD527E14A80C6A003A9506 /* SystemConfiguration.framework in Frameworks */,
+				22DD527C14A80C54003A9506 /* CFNetwork.framework in Frameworks */,
+				22DD527A14A80C4B003A9506 /* AudioToolbox.framework in Frameworks */,
+				22CAB64414A473400094D922 /* UIKit.framework in Frameworks */,
+				22CAB64614A473400094D922 /* Foundation.framework in Frameworks */,
+				22CAB64814A473400094D922 /* CoreGraphics.framework in Frameworks */,
+				22DD528614A81C46003A9506 /* Parse.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22CAB63414A473400094D922 = {
+			isa = PBXGroup;
+			children = (
+				22CAB64914A473400094D922 /* WeatherReport */,
+				22CAB64214A473400094D922 /* Frameworks */,
+				22CAB64014A473400094D922 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		22CAB64014A473400094D922 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22CAB63F14A473400094D922 /* WeatherReport.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22CAB64214A473400094D922 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22DD528514A81C46003A9506 /* Parse.framework */,
+				22DD528314A80CF1003A9506 /* Security.framework */,
+				22DD528114A80CE6003A9506 /* libz.1.1.3.dylib */,
+				22DD527F14A80C73003A9506 /* MobileCoreServices.framework */,
+				22DD527D14A80C6A003A9506 /* SystemConfiguration.framework */,
+				22DD527B14A80C54003A9506 /* CFNetwork.framework */,
+				22DD527914A80C4B003A9506 /* AudioToolbox.framework */,
+				22CAB64314A473400094D922 /* UIKit.framework */,
+				22CAB64514A473400094D922 /* Foundation.framework */,
+				22CAB64714A473400094D922 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		22CAB64914A473400094D922 /* WeatherReport */ = {
+			isa = PBXGroup;
+			children = (
+				22CAB65214A473400094D922 /* AppDelegate.h */,
+				22CAB65314A473400094D922 /* AppDelegate.m */,
+				22CAB65514A473400094D922 /* ViewController.h */,
+				22CAB65614A473400094D922 /* ViewController.m */,
+				22CAB65814A473400094D922 /* ViewController.xib */,
+				22CAB64A14A473400094D922 /* Supporting Files */,
+			);
+			path = WeatherReport;
+			sourceTree = "<group>";
+		};
+		22CAB64A14A473400094D922 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				22CAB64B14A473400094D922 /* WeatherReport-Info.plist */,
+				22CAB64C14A473400094D922 /* InfoPlist.strings */,
+				22CAB64F14A473400094D922 /* main.m */,
+				22CAB65114A473400094D922 /* WeatherReport-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22CAB63E14A473400094D922 /* WeatherReport */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22CAB65D14A473400094D922 /* Build configuration list for PBXNativeTarget "WeatherReport" */;
+			buildPhases = (
+				22CAB63B14A473400094D922 /* Sources */,
+				22CAB63C14A473400094D922 /* Frameworks */,
+				22CAB63D14A473400094D922 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeatherReport;
+			productName = WeatherReport;
+			productReference = 22CAB63F14A473400094D922 /* WeatherReport.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22CAB63614A473400094D922 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 22CAB63914A473400094D922 /* Build configuration list for PBXProject "WeatherReport" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 22CAB63414A473400094D922;
+			productRefGroup = 22CAB64014A473400094D922 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22CAB63E14A473400094D922 /* WeatherReport */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22CAB63D14A473400094D922 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22CAB64E14A473400094D922 /* InfoPlist.strings in Resources */,
+				22CAB65A14A473400094D922 /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22CAB63B14A473400094D922 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22CAB65014A473400094D922 /* main.m in Sources */,
+				22CAB65414A473400094D922 /* AppDelegate.m in Sources */,
+				22CAB65714A473400094D922 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		22CAB64C14A473400094D922 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22CAB64D14A473400094D922 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		22CAB65814A473400094D922 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22CAB65914A473400094D922 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		22CAB65B14A473400094D922 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Shu Ting Tseng (3NCQ42G54U)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PROVISIONING_PROFILE = "A0B626EF-1ECF-4805-B062-EC1399102B67";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		22CAB65C14A473400094D922 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Shu Ting Tseng (3NCQ42G54U)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "A0B626EF-1ECF-4805-B062-EC1399102B67";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22CAB65E14A473400094D922 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Downloads\"",
+					"\"$(SRCROOT)/WeatherReport\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WeatherReport/WeatherReport-Prefix.pch";
+				INFOPLIST_FILE = "WeatherReport/WeatherReport-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		22CAB65F14A473400094D922 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Downloads\"",
+					"\"$(SRCROOT)/WeatherReport\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WeatherReport/WeatherReport-Prefix.pch";
+				INFOPLIST_FILE = "WeatherReport/WeatherReport-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22CAB63914A473400094D922 /* Build configuration list for PBXProject "WeatherReport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22CAB65B14A473400094D922 /* Debug */,
+				22CAB65C14A473400094D922 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22CAB65D14A473400094D922 /* Build configuration list for PBXNativeTarget "WeatherReport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22CAB65E14A473400094D922 /* Debug */,
+				22CAB65F14A473400094D922 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22CAB63614A473400094D922 /* Project object */;
+}
