@@ -33,7 +33,7 @@
     [Parse setApplicationId:@"rvs6Ki46Y4ubOLY7RTqUBrvdDe8Zj2sungYGhpV1" 
                   clientKey:@"Zu1538OueKt6cojsRzYb0LaFMKz5GnkZvxGS8B9R"];
     
-    PFObject *testObject = [PFObject objectWithClassName:@"NMLAB"];
+    PFObject *testObject = [PFObject objectWithClassName:@"NMLAB123"];
     [testObject setObject:@"Eugene" forKey:@"Name"];
     [testObject save];
     
