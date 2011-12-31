@@ -30,15 +30,33 @@
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     
-    [Parse setApplicationId:@"rvs6Ki46Y4ubOLY7RTqUBrvdDe8Zj2sungYGhpV1" 
-                  clientKey:@"Zu1538OueKt6cojsRzYb0LaFMKz5GnkZvxGS8B9R"];
+    [Parse setApplicationId:@"bI0dZP6s8GZCQABY5AvYA4ipkqlJ51fbV81QnSez" 
+                  clientKey:@"KCRtOTkjSzJn3d50f8gyy6iavpTCEW8LjtyVcSfF"];
     
-    PFObject *testObject = [PFObject objectWithClassName:@"zzz"];
-    [testObject setObject:@"Eugene" forKey:@"zzz"];
+    PFObject *testObject = [PFObject objectWithClassName:@"test"];
+    [testObject setObject:@"hihihi" forKey:@"test"];
+    
+    [application registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge|
+     UIRemoteNotificationTypeAlert|
+     UIRemoteNotificationTypeSound];
 
     [testObject save];
     
     return YES;
+}
+
+- (void)application:(UIApplication *)application
+didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)newDeviceToken
+{
+    // Tell Parse about the device token.
+    [PFPush storeDeviceToken:newDeviceToken];
+    // Subscribe to the global broadcast channel.
+    [PFPush subscribeToChannelInBackground:@""];
+}
+
+- (void)application:(UIApplication *)application 
+didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    [PFPush handlePush:userInfo];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

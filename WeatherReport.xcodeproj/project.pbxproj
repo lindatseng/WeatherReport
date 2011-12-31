@@ -25,7 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		22CAB63F14A473400094D922 /* WeatherReport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherReport.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22CAB63F14A473400094D922 /* UserWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22CAB64314A473400094D922 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		22CAB64514A473400094D922 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		22CAB64714A473400094D922 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -80,7 +80,7 @@
 		22CAB64014A473400094D922 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				22CAB63F14A473400094D922 /* WeatherReport.app */,
+				22CAB63F14A473400094D922 /* UserWeather.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,7 +143,7 @@
 			);
 			name = WeatherReport;
 			productName = WeatherReport;
-			productReference = 22CAB63F14A473400094D922 /* WeatherReport.app */;
+			productReference = 22CAB63F14A473400094D922 /* UserWeather.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -237,7 +237,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				PROVISIONING_PROFILE = "A0B626EF-1ECF-4805-B062-EC1399102B67";
+				PROVISIONING_PROFILE = "744C2FB6-B868-4155-9E36-584471CFF7F7";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -257,7 +257,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "A0B626EF-1ECF-4805-B062-EC1399102B67";
+				PROVISIONING_PROFILE = "744C2FB6-B868-4155-9E36-584471CFF7F7";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -274,7 +274,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WeatherReport/WeatherReport-Prefix.pch";
 				INFOPLIST_FILE = "WeatherReport/WeatherReport-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = UserWeather;
+				TEST_RIG = UserWeather;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -290,7 +291,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WeatherReport/WeatherReport-Prefix.pch";
 				INFOPLIST_FILE = "WeatherReport/WeatherReport-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = UserWeather;
+				TEST_RIG = UserWeather;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
